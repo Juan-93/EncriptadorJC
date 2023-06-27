@@ -1,0 +1,393 @@
+    * {
+        /* se utiliza para eliminar los estilos predeterminados de la pagina */
+        margin: 0;
+        padding: 0;
+        font-family: 'Silkscreen', cursive;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(/imagenes/wallpaperbetter.com_1920x1080.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .logo {
+        float: top;
+        margin: 5px;
+        padding: 10px 0 0 0;
+    }
+    
+    .logotipo {
+        float: inline-end;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .titulo {
+        position: relative;
+        left: 20%;
+        font-size: 30px;
+        display: block;
+        font-family: 'Silkscreen', sans-serif;
+        white-space: nowrap;
+        font-weight: bolder;
+        width: 34ch;
+        animation: escribiendo 2s steps(20);
+        overflow: hidden;
+    }
+    
+    .cursor {
+        animation: 2s parpadeo-cursor infinite;
+    }
+    
+    @keyframes escribiendo {
+        from {
+            width: 0;
+        }
+    }
+    
+    @keyframes parpadeo-cursor {
+        50% {
+            opacity: 0;
+        }
+    }
+    
+    .contenedor-universal {
+        width: 100vw;
+        height: 80vh;
+        display: inline-flex;
+    }
+    
+    .ingresar-texto {
+        position: absolute;
+        width: 80vh;
+        height: 23vw;
+        left: 5%;
+        top: 20%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        text-align: center;
+        border-radius: 10%;
+        opacity: 0.8;
+        border: none;
+        color: blueviolet;
+    }
+    
+    .ingresar-texto:focus {
+        color: blueviolet;
+        opacity: 0.8;
+        border-radius: none;
+        text-align: center;
+        white-space: nowrap;
+        padding: 10px;
+    }
+    
+     ::placeholder {
+        padding: 10%;
+        border: none;
+        margin: 5%;
+    }
+    
+    .informacion {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 60%;
+        left: 5%;
+        top: 76%;
+        font-family: 'Silkscreen', sans-serif;
+        color: black;
+    }
+    
+    .botones {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1% 0;
+        position: absolute;
+        width: 50%;
+        left: 12%;
+        top: 80%;
+    }
+    
+    .boton-encriptar {
+        align-items: center;
+        justify-content: center;
+        padding: 2%;
+        gap: 8px;
+        width: 20%;
+        background: radial-gradient(rgb(125, 11, 232), white);
+        background-position: center;
+        border-radius: 30px;
+        font-family: 'Silkscreen', sans-serif;
+        font-size: 15px;
+        line-height: 19px;
+        text-align: center;
+        color: rgb(252, 249, 249);
+        margin: 5px;
+    }
+    
+    .boton-desencriptar {
+        align-items: center;
+        justify-content: center;
+        padding: 2%;
+        gap: 8px;
+        width: 20%;
+        backgrounD: radial-gradient(rgb(168, 122, 212), white);
+        background-position: center;
+        border-radius: 30px;
+        font-family: 'Silkscreen', sans-serif;
+        font-size: 15px;
+        line-height: 19px;
+        text-align: center;
+        color: rgb(241, 237, 237);
+        margin: 5px;
+    }
+    
+    .boton-encriptar:hover,
+    .boton-desencriptar:hover {
+        margin: 0.3%;
+        width: 24.5%;
+        padding: 1.8%;
+    }
+    
+    .segundo-contenedor,
+    .encriptado {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 30%;
+        height: 10%;
+        left: 55%;
+        top: 17%;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .mensaje {
+        border-radius: 30px;
+        width: 80vh;
+        height: 23vw;
+        opacity: 0.8;
+        border: none;
+        font-size: 29px;
+        text-align: center;
+        color: blueviolet;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .mensaje::placeholder {
+        font-size: x-large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .mensaje::placeholder:hover {
+        color: black;
+        opacity: 2;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .btn-copiar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1% 0;
+        position: absolute;
+        width: 100%;
+        left: 90%;
+        top: -100%;
+    }
+    
+    .copiar {
+        align-items: center;
+        justify-content: center;
+        padding: 2%;
+        gap: 8px;
+        width: 60%;
+        background: radial-gradient(rgb(125, 11, 232), white);
+        background-position: center;
+        border-radius: 30px;
+        font-family: 'Silkscreen', sans-serif;
+        font-size: 18px;
+        line-height: 19px;
+        text-align: center;
+        color: rgb(252, 249, 249);
+        margin: 5px;
+    }
+    
+    .copiar:hover {
+        margin: 0.3%;
+        width: 50%;
+        padding: 1.8%;
+    }
+    
+    .pie-pagina {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        margin: 0%;
+        align-items: center;
+        background: rgba(233, 126, 3, 0.242);
+        color: black(253, 253, 253);
+        font-size: small;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Silkscreen', sans-serif;
+        display: flex;
+        top: 91.5%;
+    }
+    
+    .iconos {
+        position: relative;
+        text-align: center;
+        align-items: center;
+        left: 30%;
+    }
+    
+    .redes {
+        position: relative;
+        align-items: center;
+    }
+    
+    @media screen and (min-width:481px) and (max-width: 768px) {
+        body {
+            width: 10px;
+            min-height: 100vh;
+            background: url(imagenes/wallpaperbetter.com_1920x1080.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .logotipo {
+            width: 50px;
+            height: 50px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .titulo {
+            font-size: 18px;
+        }
+        .contenedor-universal {
+            position: absolute;
+            width: 90%;
+            height: 80%;
+        }
+        .ingresar-texto {
+            width: 80vh;
+            height: 24vw;
+            left: 5%;
+            top: 5%;
+            font-size: 20px;
+            text-align: center;
+        }
+        .informacion {
+            top: 38%;
+            width: 90%;
+            left: 2%;
+        }
+        .botones {
+            width: 90%;
+            top: 42%;
+            left: 5%;
+            font-size: 10px;
+        }
+        .segundo-contenedor,
+        .encriptado {
+            flex-direction: column;
+            top: 76%;
+            left: 2%;
+            width: 80%;
+            height: 0px;
+        }
+        .mensaje {
+            width: 80vh;
+            height: 25vw;
+            left: 20%;
+        }
+        .btn-copiar {
+            left: 30%;
+            display: inline;
+            position: relative;
+        }
+        .pie-pagina {
+            top: 93%;
+            width: 100%;
+            height: 8%;
+        }
+        .iconos {
+            left: 0%;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        body {
+            width: 10px;
+            min-height: 100vh;
+            background: url(imagenes/wallpaperbetter.com_1920x1080.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .logotipo {
+            width: 50px;
+            height: 50px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .titulo {
+            font-size: 18px;
+        }
+        .contenedor-universal {
+            position: absolute;
+            width: 100%;
+            height: 80%;
+        }
+        .ingresar-texto {
+            width: 90%;
+            height: 30%;
+            left: 5%;
+            top: 11%;
+            font-size: 20px;
+            text-align: center;
+        }
+        .informacion {
+            top: 42%;
+            width: 100%;
+            left: 3%;
+        }
+        .botones {
+            width: 200%;
+            top: 50%;
+            left: 5%;
+            font-size: 10px;
+        }
+        .segundo-contenedor,
+        .encriptado {
+            flex-direction: column;
+            top: 75%;
+            left: 0%;
+            width: 100%;
+            height: 0px;
+        }
+        .mensaje {
+            width: 90%;
+            height: 40vw;
+            left: 20%;
+        }
+        .btn-copiar {
+            left: 10%;
+            display: inline;
+            position: relative;
+        }
+        .pie-pagina {
+            top: 90%;
+            width: 100%;
+            height: 10%;
+        }
+        .iconos {
+            left: 0%;
+        }
+    }

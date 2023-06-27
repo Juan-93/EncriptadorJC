@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="encripter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <header class="logo ">
+        <h1 class="titulo"><img class="logotipo" src="imagenes/Captura_de_pantalla_2023-04-27_211213-removebg-preview.png" alt="logo de J.C.P.S Developer"> ENCRIPTADOR DE TEXTOS.<span class="cursor">|</span></h1>
+    </header>
+    <section class="contenedor-universal">
+        <section class="primer-contenedor ">
+            <br>
+            <div class="contenedor-ingresar-texto ">
+                <textarea name="ingresar-texto " class="ingresar-texto " id="ingresar-texto " cols="30 " rows="20 " placeholder="Ingrese el texto aqui: " style="text-transform:lowercase" value="" onkeyup="javascript:this.value=this.value.toLowerCase();"></textarea>
+                <div class="informacion">
+                    <p class="informacion"> No se aceptan letras en mayúscula, acentos y tampoco carácteres especiales...</p>
+                </div>
+
+
+            </div>
+
+            <br>
+            <div class="botones">
+                <button class="boton-encriptar" type="button" onclick="boton_encriptar()">Encriptar</button>
+                <button class="boton-desencriptar" type="button " onclick="boton_desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <br><br>
+        <section class="segundo-contenedor">
+            <div class="encriptado ">
+                <div class="mensaje-encriptado " id="mensaje-encriptado ">
+
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="20 " class="mensaje" placeholder="Ningún texto encontrado."></textarea>
+                </div>
+                <div class="btn-copiar">
+                    <button class="copiar " onclick="botonCopiar() ">Copiar</button>
+                </div>
+
+
+            </div>
+            </div>
+        </section>
+
+    </section>
+
+
+    <footer class="pie-pagina">
+        <nav class="iconos ">
+            <h3>Creado por
+                <spam>Juan Piris</spam> durante el programa de
+                <spam>"ONE ORACLE NEXT EDUCATION "</spam>
+            </h3>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/juan-carlos-piris-sanchez-a7a724162/ " target="_blank "><img src="imagenes/linkedin.png " width="50px " alt="icono de linkedin "></a>
+                <a href="https://github.com/Juan-93 " target="_blank "><img src="imagenes/github.png " width="50px " alt="icono de Github "></a>
+            </div>
+
+        </nav>
+    </footer>
+
+</body>
+
+</html>
