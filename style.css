@@ -8,7 +8,7 @@
     body {
         margin: 0;
         padding: 0;
-        background-image: url(imagenes/wallpaperbetter.com_1920x1080.jpg);
+        background-image: url('imagenes/wallpaperbetter.com_1920x1080.jpg');
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -258,7 +258,7 @@
         body {
             width: 10px;
             min-height: 100vh;
-            background: url(imagenes/wallpaperbetter.com_1920x1080.jpg);
+            background-image: url('imagenes/wallpaperbetter.com_1920x1080.jpg');
             background-size: cover;
             background-attachment: fixed;
         }
@@ -327,7 +327,7 @@
         body {
             width: 10px;
             min-height: 100vh;
-            background: url(imagenes/wallpaperbetter.com_1920x1080.jpg);
+            background: url('imagenes/wallpaperbetter.com_1920x1080.jpg');
             background-size: cover;
             background-attachment: fixed;
         }
