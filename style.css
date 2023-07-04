@@ -24,6 +24,7 @@
     }
     
     .titulo {
+        color: black;
         position: relative;
         left: 20%;
         font-size: 30px;
