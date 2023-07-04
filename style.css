@@ -6,7 +6,7 @@
     }
     
     body {
-        background:rgb(125, 11, 232);
+        background-image: url(imagenes/minecraft-gd17d2bffe_1280.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -99,7 +99,7 @@
         left: 5%;
         top: 76%;
         font-family: 'Silkscreen', sans-serif;
-        color: black;
+        color:white;
     }
     
     .botones {
@@ -231,7 +231,7 @@
         margin: 0%;
         align-items: center;
         background: rgba(233, 126, 3, 0.242);
-        color: black(253, 253, 253);
+        color: white;
         font-size: small;
         text-align: center;
         font-weight: bold;
@@ -256,7 +256,7 @@
         body {
             width: 10px;
             min-height: 100vh;
-            background-image: url('imagenes/wallpaperbetter.com_1920x1080.jpg');
+            background-image: url(imagenes/minecraft-gd17d2bffe_1280.jpg);
             background-size: cover;
             background-attachment: fixed;
         }
@@ -325,7 +325,7 @@
         body {
             width: 10px;
             min-height: 100vh;
-            background: url('imagenes/wallpaperbetter.com_1920x1080.jpg');
+            background: url(imagenes/minecraft-gd17d2bffe_1280.jpg);
             background-size: cover;
             background-attachment: fixed;
         }
