@@ -8,7 +8,7 @@
     .pagina {
         margin: 0;
         padding: 0;
-        background-image: url('imagenes/wallpaperbetter.com_1920x1080.jpg');
+        background: rgb(125, 11, 232);
         background-size: cover;
         background-repeat: no-repeat;
     }
