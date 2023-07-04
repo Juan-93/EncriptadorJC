@@ -5,10 +5,8 @@
         font-family: 'Silkscreen', cursive;
     }
     
-    .pagina {
-        margin: 0;
-        padding: 0;
-        background: rgb(125, 11, 232);
+    body {
+        background-image: url(imagenes/wallpaperbetter.com_1920x1080.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
